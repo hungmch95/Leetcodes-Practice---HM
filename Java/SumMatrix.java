@@ -1,3 +1,11 @@
+/*
+sum of subset of 2d array
+[1,2,3]
+[4,5,6]
+[7,8,9]
+
+big O(n^2), each subsequent run of get is O(n^2)+O(n^2)+O(n^2)
+*//
 public class SumMatrix{
 
      public static void main(String []args){
@@ -16,7 +24,8 @@ public class SumMatrix{
         public SumMatrix(int[][] matrix){
             this.matrix = matrix;
         }
-        
+        //for r0 -> r in rows
+        //  for c0 -> c in cols
         public int get(int r0, int c0, int r, int c){
             int result = 0;
             //iterate through rows
