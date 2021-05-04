@@ -29,8 +29,8 @@ public class SumMatrix{
         public int get(int r0, int c0, int r, int c){
             int result = 0;
             //iterate through rows
-            for(int i = 0; i <= r; i++){
-                for(int j = 0; j <= c; j++){
+            for(int i = r0; i <= r; i++){
+                for(int j = c0; j <= c; j++){
                     result += this.matrix[i][j];
                 }
             }
